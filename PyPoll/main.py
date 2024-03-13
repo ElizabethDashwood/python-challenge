@@ -4,7 +4,7 @@ import os
 # Module for reading CSV files
 import csv
 
-# Set file path to access csv file that is to be read
+# Set file path to access csv file that is to be read for PyPoll project
 csvpath = os.path.join('.', 'Resources', 'election_data.csv')
 
 # Set steps to read csv file using the CSV module defined previously
