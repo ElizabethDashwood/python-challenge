@@ -1,0 +1,49 @@
+# Import the os module to create file paths between operating systems
+import os
+
+# Module for reading CSV files
+import csv
+
+# Set file path to access csv file that is to be read for PyBank project
+csvpath = os.path.join('.', 'Resources', 'budget_data.csv')
+
+#counter = 0
+
+# Set steps to read the csv file using the CSV module defined previously
+with open(csvpath) as csvfile:
+
+    # Specify the variable that holds the csv file contents and the delimiter for the CSV file
+    csvreader = csv.reader(csvfile, delimiter =',')
+    print (csvreader)
+    count = len(list(csvreader))
+    print (count)
+
+    # Read the header row of the csv file using f-string
+    csv_header = next(csvreader)
+    print(f"CSV Header: {csv_header}")
+
+   #Read each row of data after the header
+    for row in csvreader:
+       print(row)
+    count = len(list(next(0)(csvreader)))    
+
+    print (count)
+
+    " Count the number of data rows in the csv file"
+    #BankList = csv.reader(open("budget_data.csv"))
+   # count_lines = len(list(BankList))
+    #print(count_lines)
+    
+
+   # Count records in file
+    #for row in csvreader:
+      #counter = counter + 1
+      #print(counter)
+    
+    "Print Report Title"
+    print ("Financial Analysis")
+    print ("----------------------------")
+
+  # Count the rows in the csv files(excluding the heading)
+    
+    
