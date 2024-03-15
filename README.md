@@ -39,6 +39,15 @@ $ python main.py
 <_csv.reader object at 0x000001CD7C135EA0>
 CSV Header: ['Date', 'Profit/Losses']
 
+**Step 2: Correctly determines the number of records in the csv file using len() and list fucntions**
+# Count the number of data rows in the csv file
+    csvcount = len(list(csvreader))
+    # Reference: https://www.w3resource.com/python-exercises/modules/python-module-csv-exercise-2.php    
+    # Reference:https://docs.python.org/3/tutorial/datastructures.html
+    print("Total: " + str(csvcount))
+
+Total: 86
+
 For PyPoll project, the main.py python script file under 'python-challenge/PyPoll' runs the process of reading the csv file and storing the header row.
 The script and output are as follows:
 
@@ -64,7 +73,17 @@ with open(csvpath) as csvfile:
 
 **When the script runs for the command line in python using the python main.py command, the output shows the csv header:**
 
+
+
 $ python main.py
 <_csv.reader object at 0x00000198B1305DE0>
 CSV Header: ['Ballot ID', 'County', 'Candidate']
 
+**Step 2: Correctly determines the number of records in the csv file using len() and list fucntions**
+# Count the number of data rows in the csv file
+    csvcount = len(list(csvreader))
+    # Reference: https://www.w3resource.com/python-exercises/modules/python-module-csv-exercise-2.php    
+    # Reference:https://docs.python.org/3/tutorial/datastructures.html
+    print("Total: " + str(csvcount))
+
+Total: 369711
