@@ -10,9 +10,22 @@ Installations required:
 
 Executing Homework Challenge Requirements: 
 
+Please see python-challenge/PyBank/main.py for the script which performs the following 2 steps:
+
 **Step 1: Correctly Reads in the CSV**
 For PyBank project, the main.py python script file under 'python-challenge/PyBank' runs the process of reading the csv file and storing the header row.
 The script and output are as follows:
+
+**When the script runs for the command line in python using the python main.py command, the output shows the csv header:**
+$ python main.py
+<_csv.reader object at 0x000001CD7C135EA0>
+CSV Header: ['Date', 'Profit/Losses']
+
+**Step 2: Correctly determines the number of records in the csv file using len() and list functions**
+**When the script runs for the command line in python using the python main.py command, the output shows the total number of months**
+Total: 86
+
+
 
 # Import the os module to create file paths between operating systems
 import os
@@ -34,19 +47,7 @@ with open(csvpath) as csvfile:
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
 
-**When the script runs for the command line in python using the python main.py command, the output shows the csv header:**
-$ python main.py
-<_csv.reader object at 0x000001CD7C135EA0>
-CSV Header: ['Date', 'Profit/Losses']
 
-**Step 2: Correctly determines the number of records in the csv file using len() and list fucntions**
-# Count the number of data rows in the csv file
-    csvcount = len(list(csvreader))
-    # Reference: https://www.w3resource.com/python-exercises/modules/python-module-csv-exercise-2.php    
-    # Reference:https://docs.python.org/3/tutorial/datastructures.html
-    print("Total: " + str(csvcount))
-
-Total: 86
 
 For PyPoll project, the main.py python script file under 'python-challenge/PyPoll' runs the process of reading the csv file and storing the header row.
 The script and output are as follows:
